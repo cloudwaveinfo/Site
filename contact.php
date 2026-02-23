@@ -66,7 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // --- A. COMPANY LEAD NOTIFICATION ---
         $mail->setFrom('info@cloudwaveinfo.com', 'Cloudwave Website');
         $mail->addAddress('kashankumar12@gmail.com'); // Main recipient
-        $mail->addAddress('info@cloudwaveinfo.com'); // Secondary/Backup
         $mail->addReplyTo($email, $name);
 
         $mail->isHTML(true);
@@ -127,4 +126,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(405);
     echo json_encode(["status" => "error", "message" => "Only POST requests allowed"]);
 }
+
 ?>
