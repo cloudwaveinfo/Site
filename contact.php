@@ -56,10 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();
-        $mail->Host = 'smtp.secureserver.net';
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'info@cloudwaveinfo.com';
-        $mail->Password = 'Cloudwave@123$'; // Set this if required by host
+        $mail->Username = 'jagadeesh80155@gmail.com';
+        $mail->Password = 'ufygbysbnazlyvhl'; // Set this if required by host
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -128,3 +128,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
+
